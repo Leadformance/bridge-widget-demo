@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo Widget</title>
+
+        <link rel="stylesheet" href="demo.css">
+    </head>
+
+    <body>
+        <div class="title">
+            Widget with some custom style
+        </div>
+
+        <div id="styledWidget" class="styled-widget"></div>
+
+        <script src="CONFIG_KUBERNETES_WIDGET_URL"
+                data-target="#styledWidget"
+                data-locale="en"
+                data-api-key="CONFIG_KUBERNETES_API_KEY"
+                data-api-secret="CONFIG_KUBERNETES_API_SECRET"
+                data-search-placeholder="Recherche"
+                data-store-locator-url="https://merevo-luxury.v3.leadformance.com"
+                data-custom-style-url="https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/validationPO/customStyleExample.css">
+        </script>
+
+        <div class="title">
+            Widget with no custom style
+        </div>
+
+        <div id="simpleWidget" class="simple-widget"></div>
+
+        <script src="CONFIG_KUBERNETES_WIDGET_URL"
+                data-target="#simpleWidget"
+                data-locale="en"
+                data-api-key="CONFIG_KUBERNETES_API_KEY"
+                data-api-secret="CONFIG_KUBERNETES_API_SECRET"
+                data-search-placeholder="Recherche"
+                data-store-locator-url="https://merevo-luxury.v3.leadformance.com">
+        </script>
+    </body>
+</html>

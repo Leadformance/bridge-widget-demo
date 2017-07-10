@@ -1,0 +1,121 @@
+
+.widget {
+    font-family: arial, sans-serif;
+}
+
+.search {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.search-form-input {
+    display: inline-block;
+    border: solid 1px #000;
+    padding: 10px 5px;
+    vertical-align: middle;
+}
+
+.search-form-submit {
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    width: 35px;
+    height: 22px;
+    background: url('https://image.flaticon.com/icons/png/128/149/149401.png') no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.search-results {
+    overflow: auto;
+    max-height: 389px;
+    font-size: 13px;
+}
+
+.search-result {
+    border-bottom: solid 1px #000;
+    padding: 10px;
+}
+
+.search-result > * {
+    margin-bottom: 3px;
+}
+
+.search-result:nth-child(odd) {
+    background: #eee;
+}
+
+.search-result:last-child {
+    border-bottom: 0;
+}
+
+.location-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.location-address-postal-code {
+    padding: 0 5px;
+}
+
+.location-address-postal-code:after {
+    padding-left: 5px;
+    content: '-';
+}
+
+.location-email-link,
+.location-phone-link {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.location-email:before,
+.location-phone:before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content: '';
+    vertical-align: middle;
+}
+
+.location-phone:before {
+    background: url('https://www.shareicon.net/download/2015/11/14/672080_phone.svg') no-repeat center;
+    background-size: contain;
+}
+
+.location-email:before {
+    background: url('http://iconshow.me/media/images/ui/Streamline-Icon/png/128/78-email-mail-streamline.png') no-repeat center;
+    background-size: contain;
+}
+
+.opening-hours {
+    display: flex;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.opening-hours-day {
+    flex: 1;
+}
+
+.opening-hours-day + .opening-hours-day {
+    border-left: solid 1px #000;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.opening-hours-day-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.time-band {
+    display: block;
+}
+
+.time-band-closed {
+    color: #ff0000;
+}
