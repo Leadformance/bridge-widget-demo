@@ -9,6 +9,23 @@
 
     <body>
         <div class="title">
+            Widget with some MrBricolage style for example
+        </div>
+
+        <div id="mrBricolageWidget" class="styled-widget"></div>
+
+        <script src="CONFIG_KUBERNETES_WIDGET_URL"
+                data-target="#mrBricolageWidget"
+                data-locale="fr"
+                data-api-key="CONFIG_KUBERNETES_API_KEY"
+                data-api-secret="CONFIG_KUBERNETES_API_SECRET"
+                data-title="Bienvenue sur"
+                data-search-placeholder="Ville, Code postal, ..."
+                data-store-locator-url="CONFIG_KUBERNETES_FO_URL"
+                data-custom-style-url="CONFIG_KUBERNETES_CUSTOM_STYLE_URL">
+        </script>
+
+        <div class="title">
             Widget with some custom style
         </div>
 
@@ -20,7 +37,7 @@
                 data-api-key="CONFIG_KUBERNETES_API_KEY"
                 data-api-secret="CONFIG_KUBERNETES_API_SECRET"
                 data-search-placeholder="Recherche"
-                data-store-locator-url="https://merevo-luxury.v3.leadformance.com"
+                data-store-locator-url="CONFIG_KUBERNETES_FO_URL"
                 data-custom-style-url="https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/validationPO/customStyleExample.css">
         </script>
 
@@ -36,7 +53,7 @@
                 data-api-key="CONFIG_KUBERNETES_API_KEY"
                 data-api-secret="CONFIG_KUBERNETES_API_SECRET"
                 data-search-placeholder="Recherche"
-                data-store-locator-url="https://merevo-luxury.v3.leadformance.com">
+                data-store-locator-url="CONFIG_KUBERNETES_FO_URL">
         </script>
     </body>
 </html>
