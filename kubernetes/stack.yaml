@@ -47,6 +47,16 @@ spec:
               configMapKeyRef:
                 name: widget-demo-configuration
                 key: custom-style-url
+          - name: CONFIG_KUBERNETES_MAP_PROVIDER
+            valueFrom:
+              configMapKeyRef:
+                name: widget-demo-configuration
+                key: map-provider
+          - name: CONFIG_KUBERNETES_MAP_API_KEY
+            valueFrom:
+              configMapKeyRef:
+                name: widget-demo-configuration
+                key: map-api-key
       imagePullSecrets:
         - name: docker-hub-solocal
       nodeSelector:

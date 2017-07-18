@@ -67,7 +67,9 @@
 }
 
 .search-results {
+    float: left;
     overflow: auto;
+    width: 50%;
     max-height: 389px;
     font-size: 13px;
 }
@@ -131,6 +133,7 @@
 
 .opening-hours {
     display: flex;
+    overflow: auto;
     padding-top: 5px;
     text-align: center;
     font-size: 12px;
@@ -158,4 +161,10 @@
 
 .time-band-closed {
     color: #ff0000;
+}
+
+.map {
+    float: left;
+    width: 50%;
+    height: 389px;
 }
