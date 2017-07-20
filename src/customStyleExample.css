@@ -1,6 +1,28 @@
 
+@font-face {
+    font-family: 'custom-font';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.eot?317xds');
+    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.eot?#iefix317xds') format('embedded-opentype'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.ttf?317xds') format('truetype'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.woff?317xds') format('woff'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.svg?317xds#aileron') format('svg');
+}
+
+@font-face {
+    font-family: 'icon-font';
+    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.eot?316xds');
+    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.eot?#iefix316xds') format('embedded-opentype'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.ttf?316xds') format('truetype'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.woff?316xds') format('woff'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.svg?316xds#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .widget {
-    font-family: arial, sans-serif;
+    font-family: custom-font, arial, sans-serif;
 }
 
 .search {
@@ -32,9 +54,13 @@
     cursor: pointer;
     border: 0;
     width: 35px;
-    height: 22px;
-    background: url('https://image.flaticon.com/icons/png/128/149/149401.png') no-repeat center;
-    background-size: contain;
+    height: 35px;
+    background-color: #fff;
+}
+
+.search-form-submit:before {
+    content: "\e900";
+    font-size: 16px;
 }
 
 .search-suggestions {
@@ -108,7 +134,6 @@
 .location-email-link,
 .location-phone-link {
     display: inline-block;
-    vertical-align: middle;
     padding-left: 5px;
 }
 
@@ -122,13 +147,11 @@
 }
 
 .location-phone:before {
-    background: url('https://www.shareicon.net/download/2015/11/14/672080_phone.svg') no-repeat center;
-    background-size: contain;
+    content: "\e901";
 }
 
 .location-email:before {
-    background: url('http://iconshow.me/media/images/ui/Streamline-Icon/png/128/78-email-mail-streamline.png') no-repeat center;
-    background-size: contain;
+    content: "\e902";
 }
 
 .opening-hours {
@@ -167,4 +190,18 @@
     float: left;
     width: 50%;
     height: 389px;
+}
+
+.search-form-submit:before,
+.location-email:before,
+.location-phone:before {
+    font-family: 'icon-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
