@@ -48,9 +48,9 @@
     box-sizing: border-box;
 }
 
+.search-geolocation-button,
 .search-form-submit {
     position: absolute;
-    margin-left: 110px;
     cursor: pointer;
     border: 0;
     width: 35px;
@@ -58,8 +58,21 @@
     background-color: #fff;
 }
 
+.search-form-submit {
+    margin-left: 110px;
+}
+
 .search-form-submit:before {
     content: "\e900";
+    font-size: 16px;
+}
+
+.search-geolocation-button {
+    margin-left: -110px;
+}
+
+.search-geolocation-button:before {
+    content: "\e903";
     font-size: 16px;
 }
 
@@ -192,6 +205,7 @@
     height: 389px;
 }
 
+.search-geolocation-button:before,
 .search-form-submit:before,
 .location-email:before,
 .location-phone:before {
