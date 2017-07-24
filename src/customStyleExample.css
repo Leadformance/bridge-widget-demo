@@ -130,6 +130,30 @@
     border-bottom: 0;
 }
 
+.location-marker {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 24px;
+    height: 36px;
+    background: url('http://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi_hdpi.png') center no-repeat;
+    background-size: contain;
+}
+
+.location-marker-number {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    font-size: 10px;
+    content: '';
+}
+
 .location-name {
     text-transform: uppercase;
     font-weight: bold;
@@ -203,6 +227,18 @@
     float: left;
     width: 50%;
     height: 389px;
+}
+
+.map-marker-label {
+    position: absolute;
+    top: -35px;
+    right: -6px;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    font-size: 10px;
 }
 
 .search-geolocation-button:before,
