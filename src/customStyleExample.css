@@ -136,22 +136,17 @@
     margin-right: 8px;
     width: 24px;
     height: 36px;
-    background: url('http://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi_hdpi.png') center no-repeat;
+    background: url('https://d1269z4w4wp4wh.cloudfront.net/release/merevo-luxury/v1/assets/images/markers/marker.png') center no-repeat;
     background-size: contain;
 }
 
 .location-marker-number {
-    display: block;
     position: absolute;
-    top: 3px;
-    right: 5px;
-    border-radius: 50%;
-    background-color: #fff;
-    width: 13px;
-    height: 13px;
+    top: 6px;
+    left: -7px;
+    width: 38px;
     text-align: center;
-    font-size: 10px;
-    content: '';
+    font-size: 13px;
 }
 
 .location-name {
@@ -231,14 +226,12 @@
 
 .map-marker-label {
     position: absolute;
-    top: -35px;
-    right: -6px;
-    border-radius: 50%;
-    background-color: #fff;
-    width: 12px;
-    height: 12px;
+    top: -41px;
+    left: -19px;
+    width: 38px;
     text-align: center;
-    font-size: 10px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .search-geolocation-button:before,
