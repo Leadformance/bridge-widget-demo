@@ -1,250 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 @font-face {
-    font-family: 'custom-font';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.eot?317xds');
-    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.eot?#iefix317xds') format('embedded-opentype'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.ttf?317xds') format('truetype'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.woff?317xds') format('woff'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/AvenirNext-Regular.svg?317xds#aileron') format('svg');
-}
-
-@font-face {
-    font-family: 'icon-font';
-    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.eot?316xds');
-    src: url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.eot?#iefix316xds') format('embedded-opentype'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.ttf?316xds') format('truetype'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.woff?316xds') format('woff'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/icomoon.svg?316xds#icomoon') format('svg');
+    font-family: 'widget';
+    src:  url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.eot?l23fxg');
+    src:  url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.eot?l23fxg#iefix') format('embedded-opentype'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.ttf?l23fxg') format('truetype'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.woff?l23fxg') format('woff'),
+    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.svg?l23fxg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-.widget {
-    font-family: custom-font, arial, sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.search {
-    position: relative;
-    margin: 10px 0;
-    text-align: center;
+*, :after, :before {
+    box-sizing: border-box;
 }
 
 .search-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 3;
-    height: 35px;
-    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    height: 44px;
+    margin: 1px 1px 0;
 }
 
-.search-form-input {
-    border: solid 1px #000;
-    padding: 10px 5px;
-    width: 185px;
-    box-sizing: border-box;
+.search-form:hover {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
 .search-geolocation-button,
 .search-form-submit {
-    position: absolute;
-    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
     border: 0;
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-}
-
-.search-form-submit {
-    margin-left: 110px;
-}
-
-.search-form-submit:before {
-    content: "\e900";
-    font-size: 16px;
-}
-
-.search-geolocation-button {
-    margin-left: -110px;
-}
-
-.search-geolocation-button:before {
-    content: "\e903";
-    font-size: 16px;
-}
-
-.search-suggestions {
-    position: absolute;
-    top: 33px;
-    left: 50%;
-    z-index: 2;
-    transform: translateX(-50%);
-    border: solid 1px #000;
     background: #fff;
-    width: 185px;
-    max-height: 234px;
-    overflow: auto;
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 13px;
-}
-
-.search-suggestion {
     cursor: pointer;
-    padding: 3px;
-    font-size: 13px;
-}
-
-.search-suggestion:active,
-.search-suggestion:focus,
-.search-suggestion:hover {
-    background-color: #eee;
+    width: 44px;
+    height: 44px;
     outline: 0;
 }
 
-.search-results {
-    float: left;
-    overflow: auto;
-    width: 50%;
-    max-height: 389px;
-    font-size: 13px;
+.search-geolocation-button:hover,
+.search-form-submit:hover {
+    background: rgba(150, 150, 150, .1);
 }
 
-.search-result {
-    border-bottom: solid 1px #000;
-    padding: 10px;
-}
-
-.search-result > * {
-    margin-bottom: 3px;
-}
-
-.search-result:nth-child(odd) {
-    background: #eee;
-}
-
-.search-result:last-child {
-    border-bottom: 0;
-}
-
-.location-marker {
-    position: relative;
-    float: left;
-    margin-right: 8px;
-    width: 24px;
-    height: 36px;
-    background: url('https://d1269z4w4wp4wh.cloudfront.net/release/merevo-luxury/v1/assets/images/markers/marker.png') center no-repeat;
-    background-size: contain;
-}
-
-.location-marker-number {
-    position: absolute;
-    top: 6px;
-    left: -7px;
-    width: 38px;
-    text-align: center;
-    font-size: 13px;
-}
-
-.location-name {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.location-address-postal-code {
-    padding: 0 5px;
-}
-
-.location-address-postal-code:after {
-    padding-left: 5px;
-    content: '-';
-}
-
-.location-email-link,
-.location-phone-link {
-    display: inline-block;
-    padding-left: 5px;
-}
-
-.location-email:before,
-.location-phone:before {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    content: '';
-    vertical-align: middle;
-}
-
-.location-phone:before {
-    content: "\e901";
-}
-
-.location-email:before {
-    content: "\e902";
-}
-
-.opening-hours {
-    display: flex;
-    overflow: auto;
-    padding-top: 5px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.opening-hours-day {
-    flex: 1;
-}
-
-.opening-hours-day + .opening-hours-day {
-    border-left: solid 1px #000;
-    margin-left: 5px;
-    padding-left: 5px;
-}
-
-.opening-hours-day-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.time-band {
-    display: block;
-}
-
-.time-band-closed {
-    color: #ff0000;
-}
-
-.map {
-    float: left;
-    width: 50%;
-    height: 389px;
-}
-
-.map-marker-label {
-    position: absolute;
-    top: -41px;
-    left: -19px;
-    width: 38px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.search-geolocation-button:before,
-.search-form-submit:before,
-.location-email:before,
-.location-phone:before {
-    font-family: 'icon-font' !important;
+.search-geolocation-button::before,
+.search-form-submit::before {
+    font-family: 'widget' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    font-size: 24px;
+
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.search-geolocation-button::before {
+    content: '\e903';
+}
+
+.search-form-submit::before {
+    content: '\e900';
+}
+
+.search-form-input {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    padding: 0 8px;
+    width: calc(100% - 88px);
+    height: 44px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    outline: 0;
+}
+
+.search-suggestions {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    left: 1px;
+    right: 1px;
+    overflow-y: auto;
+    max-height: 230px;
+}
+
+.search-suggestion {
+    padding: 8px;
+}
+
+.search-suggestion:hover {
+    background: rgba(150, 150, 150, .1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-results {
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.map {
+    display: none;
+}
+
+.map-marker-label {
+    width: 38px;
+    position: absolute;
+    left: -19px;
+    top: -40px;
+    font-weight: bold;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+}
+
+.search-result {
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    padding: 8px 0 36px;
+    background: #fff;
+    font-weight: 300;
+}
+
+.search-result:first-child {
+    border-top: 0;
+}
+
+.location-marker {
+    float: left;
+    padding-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.location-marker:after {
+    content: '.';
+}
+
+.location-name {
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: calc(100% - 20px);
+}
+
+.location-name-label {
+    padding-left: 3px;
+}
+
+.location-address {
+    position: relative;
+    padding: 8px 8px 8px 40px;
+}
+
+.location-address-address1 {
+    display: block;
+}
+
+.location-address-city:before {
+    content: ' ';
+}
+
+.location-address:before,
+.location-phone-link:before,
+.location-email-link:before {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-family: 'widget' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 24px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.location-address:before {
+    content: '\e905';
+}
+
+.location-phone-link,
+.location-email-link {
+    display: block;
+    position: relative;
+    padding: 8px 8px 8px 40px;
+    text-decoration: none;
+    color: #333;
+}
+
+.location-phone-link:before {
+    content: '\e904';
+}
+
+.location-email-link:before {
+    content: '\e902';
+}
+
+.location-phone-link:hover,
+.location-email-link:hover,
+.opening-hours:hover {
+    background: rgba(150, 150, 150, .1);
+}
+
+.location-page {
+    position: absolute;
+    bottom: 0;
+    height: 36px;
+    left: 0;
+    right: 0;
+}
+
+.location-page {
+    position: absolute;
+    bottom: 0;
+    height: 36px;
+    left: 0;
+    right: 0;
+    background: rgba(150, 150, 150, 0);
+    transition: background .48s;
+}
+
+.location-page-link {
+    display: block;
+    text-indent: -9999px;
+    padding: 10px 8px;
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.location-page:before {
+    content: 'Voir la fiche magasin';
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 36px;
+    height: 36px;
+    z-index: -1;
+}
+
+.location-page:hover {
+    background: rgba(150, 150, 150, .1);
+}
+
+.opening-hours {
+    padding: 8px 40px;
+    height: 32px;
+    overflow: hidden;
+    transition: height .48s;
+    position: relative;
+}
+
+.opening-hours:hover {
+    height: 171px;
+}
+
+.opening-hours:before {
+    font-family: 'widget';
+    content: '\e901';
+    top: 5px;
+    left: 8px;
+    font-size: 24px;
+    position: absolute;
+}
+
+.opening-hours:after {
+    content: '\e906';
+    position: absolute;
+    font-family: 'widget';
+    right: 8px;
+    top: 5px;
+    transform: rotate(90deg);
+    font-size: 24px;
+    transition: transform .48s;
+}
+
+.opening-hours:hover:after {
+    transform: rotate(-90deg);
+}
+
+.opening-hours-day-label {
+    flex: 1;
+}
+
+.opening-hours-day {
+    display: flex;
+    padding: 3px 0;
+}
+
+.time-bands {
+    flex: 2;
+    text-align: right;
+}
+
+.time-band:nth-child(2) {
+    content: ' / ';
+}
+
+.time-band-closed {
+    color: #c10300;
+}
+
+.opening-hours-day:first-child {
+    padding-top: 0;
+}
+
+.opening-hours-day:last-child {
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .search-results {
+        width: 50%;
+        float: left;
+        max-height: 500px;
+        overflow-y: auto;
+        margin-top: 10px;
+    }
+
+    .map {
+        display: block;
+        height: 500px;
+        float: left;
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+.search-error {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.search-empty-result {
+    font-size: 16px;
 }

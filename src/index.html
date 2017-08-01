@@ -4,45 +4,50 @@
         <meta charset="UTF-8">
         <title>Demo Widget</title>
 
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="demo.css">
     </head>
 
     <body>
-        <div class="title">
-            Widget with some custom style
+        <div class="box">
+            <div class="title">
+                Widget with some custom style
+            </div>
+
+            <div id="styledWidget" class="styled-widget"></div>
+
+            <script src="CONFIG_KUBERNETES_WIDGET_URL"
+                    data-target="#styledWidget"
+                    data-locale="fr"
+                    data-api-key="CONFIG_KUBERNETES_API_KEY"
+                    data-api-secret="CONFIG_KUBERNETES_API_SECRET"
+                    data-search-placeholder="Rechercher..."
+                    data-geolocation-enabled="true"
+                    data-geolocation-radius="50000"
+                    data-store-locator-url="CONFIG_KUBERNETES_FO_URL"
+                    data-custom-style-url="customStyleExample.css"
+                    data-map-provider="CONFIG_KUBERNETES_MAP_PROVIDER"
+                    data-map-api-key="CONFIG_KUBERNETES_MAP_API_KEY"
+                    data-map-marker="https://d1269z4w4wp4wh.cloudfront.net/release/merevo-luxury/v1/assets/images/markers/marker.png">
+            </script>
         </div>
 
-        <div id="styledWidget" class="styled-widget"></div>
+        <div class="box">
+            <div class="title">
+                Widget with no custom style
+            </div>
 
-        <script src="CONFIG_KUBERNETES_WIDGET_URL"
-                data-target="#styledWidget"
-                data-locale="fr"
-                data-api-key="CONFIG_KUBERNETES_API_KEY"
-                data-api-secret="CONFIG_KUBERNETES_API_SECRET"
-                data-search-placeholder="Rechercher..."
-                data-geolocation-enabled="true"
-                data-geolocation-radius="50000"
-                data-store-locator-url="CONFIG_KUBERNETES_FO_URL"
-                data-custom-style-url="customStyleExample.css"
-                data-map-provider="CONFIG_KUBERNETES_MAP_PROVIDER"
-                data-map-api-key="CONFIG_KUBERNETES_MAP_API_KEY"
-                data-map-marker="https://d1269z4w4wp4wh.cloudfront.net/release/merevo-luxury/v1/assets/images/markers/marker.png">
-        </script>
+            <div id="simpleWidget" class="simple-widget"></div>
 
-        <div class="title">
-            Widget with no custom style
+            <script src="CONFIG_KUBERNETES_WIDGET_URL"
+                    data-target="#simpleWidget"
+                    data-locale="en"
+                    data-api-key="CONFIG_KUBERNETES_API_KEY"
+                    data-api-secret="CONFIG_KUBERNETES_API_SECRET"
+                    data-search-placeholder="Search..."
+                    data-geolocation-enabled="true"
+                    data-store-locator-url="CONFIG_KUBERNETES_FO_URL">
+            </script>
         </div>
-
-        <div id="simpleWidget" class="simple-widget"></div>
-
-        <script src="CONFIG_KUBERNETES_WIDGET_URL"
-                data-target="#simpleWidget"
-                data-locale="en"
-                data-api-key="CONFIG_KUBERNETES_API_KEY"
-                data-api-secret="CONFIG_KUBERNETES_API_SECRET"
-                data-search-placeholder="Search..."
-                data-geolocation-enabled="true"
-                data-store-locator-url="CONFIG_KUBERNETES_FO_URL">
-        </script>
     </body>
 </html>
