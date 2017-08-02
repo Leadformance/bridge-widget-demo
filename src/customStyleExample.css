@@ -83,6 +83,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     outline: 0;
+    -webkit-appearance: textField;
 }
 
 .search-suggestions {
