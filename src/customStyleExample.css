@@ -223,37 +223,28 @@ body {
     background: rgba(150, 150, 150, .1);
 }
 
-.location-page {
+.location-page,
+.location-custom-page {
     position: absolute;
     bottom: 0;
     height: 36px;
-    left: 0;
-    right: 0;
-}
-
-.location-page {
-    position: absolute;
-    bottom: 0;
-    height: 36px;
-    left: 0;
-    right: 0;
     background: rgba(150, 150, 150, 0);
-    transition: background .48s;
+    transition: background .48s, border .48s;
+    border-bottom: 2px solid #fff;
 }
 
-.location-page-link {
-    display: block;
-    text-indent: -9999px;
-    padding: 10px 8px;
-    height: 36px;
-    position: absolute;
-    bottom: 0;
+.location-page {
     left: 0;
+    right: 50%;
+}
+
+.location-custom-page {
+    left: 50%;
     right: 0;
 }
 
-.location-page:before {
-    content: 'Voir la fiche magasin';
+.location-page:before,
+.location-custom-page:before {
     display: block;
     text-align: center;
     font-size: 14px;
@@ -264,8 +255,29 @@ body {
     z-index: -1;
 }
 
-.location-page:hover {
+.location-page:before {
+    content: 'Voir la fiche';
+}
+
+.location-custom-page:before {
+    content: 'Choisir ce magasin';
+}
+.location-page:hover,
+.location-custom-page:hover {
     background: rgba(150, 150, 150, .1);
+    border-bottom: 2px solid #333;
+}
+
+.location-page-link,
+.location-custom-page-link {
+    display: block;
+    text-indent: -9999px;
+    padding: 10px 8px;
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .opening-hours {
