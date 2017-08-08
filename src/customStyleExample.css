@@ -22,6 +22,11 @@ body {
     box-sizing: border-box;
 }
 
+.widget {
+    position: relative;
+    height: 100%;
+}
+
 .search-form {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     height: 44px;
@@ -371,4 +376,54 @@ body {
 
 .search-empty-result {
     font-size: 16px;
+}
+
+.loading {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #f1f1f1;
+}
+
+.loading:before,
+.loading:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.loading:before {
+    border: 3px solid rgba(8, 30, 63, 0);
+    box-shadow: inset 0 0 0 3em #f1f1f1
+}
+
+.loading:after {
+    z-index: 0;
+    border: solid 10px;
+    border-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+    border-image-slice: 0 0 0 20;
+    animation: loadingSpin 1s infinite linear;
+}
+
+@keyframes loadingSpin {
+    to {
+        transform: rotate(359deg);
+    }
 }
