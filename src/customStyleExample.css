@@ -224,7 +224,7 @@ body {
 
 .location-phone-link:hover,
 .location-email-link:hover,
-.location-times:hover {
+.opening-hours:hover {
     background: rgba(150, 150, 150, .1);
 }
 
@@ -234,7 +234,7 @@ body {
     bottom: 0;
     height: 36px;
     background: rgba(150, 150, 150, 0);
-    transition: background .32s, border .32s;
+    transition: background .48s, border .48s;
     border-bottom: 2px solid #fff;
 }
 
@@ -285,61 +285,40 @@ body {
     right: 0;
 }
 
-.location-times {
+.opening-hours {
     padding: 8px 40px;
     height: 32px;
     overflow: hidden;
-    transition: height .32s;
+    transition: height .48s;
     position: relative;
 }
 
-.location-times:hover {
-    height: 186px;
+.opening-hours:hover {
+    height: 171px;
 }
 
-.location-times:before {
+.opening-hours:before {
     font-family: 'widget';
     content: '\e901';
-    top: 4px;
+    top: 5px;
     left: 8px;
     font-size: 24px;
     position: absolute;
 }
 
-.location-times:after {
+.opening-hours:after {
     content: '\e906';
     position: absolute;
     font-family: 'widget';
     right: 8px;
-    top: 4px;
+    top: 5px;
     transform: rotate(90deg);
     font-size: 24px;
-    transition: transform .32s;
+    transition: transform .48s;
 }
 
-.location-times:hover:after {
+.opening-hours:hover:after {
     transform: rotate(-90deg);
-}
-
-.opening-status {
-    font-weight: bold;
-}
-
-.opening-status.open-soon,
-.opening-status.close-soon{
-    color: #e4a300;
-}
-
-.opening-status.open {
-    color: #1fb12b;
-}
-
-.opening-status.closed {
-    color: #b71313;
-}
-
-.opening-hours {
-    margin-top: 6px;
 }
 
 .opening-hours-day-label {
