@@ -42,11 +42,6 @@ spec:
               configMapKeyRef:
                 name: widget-demo-configuration
                 key: fo-url
-          - name: CONFIG_KUBERNETES_CUSTOM_STYLE_URL
-            valueFrom:
-              configMapKeyRef:
-                name: widget-demo-configuration
-                key: custom-style-url
           - name: CONFIG_KUBERNETES_MAP_PROVIDER
             valueFrom:
               configMapKeyRef:
