@@ -416,6 +416,44 @@ body {
     padding-bottom: 0;
 }
 
+.route {
+    position: absolute;
+    top: 40px;
+    right: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform .3s;
+}
+
+.route:before {
+    font-family: 'widget';
+    content: '\e909';
+    line-height: 22px;
+}
+
+.route:hover {
+    transform: scale(1.1);
+}
+
+.route .loading {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.route .loading:before {
+    box-shadow: inset 0 0 0 3em #fff;
+}
+
+.route .loading:after {
+    border-width: 5px;
+}
+
 @media (min-width: 768px) {
     .search-results {
         width: 50%;
