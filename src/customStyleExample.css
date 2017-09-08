@@ -386,6 +386,10 @@ body {
     margin-top: 6px;
 }
 
+.opening-hours-day.today {
+    font-weight: bold;
+}
+
 .opening-hours-day-label {
     flex: 1;
 }
