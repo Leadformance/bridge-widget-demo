@@ -27,10 +27,7 @@ spec:
           - name: CONFIG_KUBERNETES_API_SECRET
             value: WIDGET_API_SECRET
           - name: CONFIG_KUBERNETES_WIDGET_URL
-            valueFrom:
-              configMapKeyRef:
-                name: widget-demo-configuration
-                key: widget-url
+            value: WIDGET_URL
           - name: CONFIG_KUBERNETES_MAP_PROVIDER
             valueFrom:
               configMapKeyRef:
