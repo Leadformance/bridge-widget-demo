@@ -23,15 +23,9 @@ spec:
           containerPort: 80
         env:
           - name: CONFIG_KUBERNETES_API_KEY
-            valueFrom:
-              configMapKeyRef:
-                name: widget-demo-configuration
-                key: api-key
+            value: WIDGET_API_KEY
           - name: CONFIG_KUBERNETES_API_SECRET
-            valueFrom:
-              configMapKeyRef:
-                name: widget-demo-configuration
-                key: api-secret
+            value: WIDGET_API_SECRET
           - name: CONFIG_KUBERNETES_WIDGET_URL
             valueFrom:
               configMapKeyRef:
