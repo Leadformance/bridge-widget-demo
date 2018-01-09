@@ -1,0 +1,4 @@
+# Defines Panda team as default owners for everything in the repo.
+# Unless a later match takes precedence,
+# @panda will be requested for review when someone opens a pull request.
+*       @Leadformance/panda
