@@ -50,5 +50,23 @@
                     data-search-geolocation="true">
             </script>
         </div>
+        <script type="text/javascript">
+            document.addEventListener('bridge.widget.location.select', function(evt) {
+                console.log('location selected', evt);
+            }, false);
+            document.addEventListener('bridge.widget.location.custom', function(evt) {
+                console.log('location custom selected', evt);
+            }, false);
+            document.addEventListener('bridge.widget.search.results', function(evt) {
+                console.log('search results', evt);
+            }, false);
+            document.addEventListener('bridge.widget.search.empty', function(evt) {
+                console.log('empty search', evt);
+            }, false);
+            document.addEventListener('bridge.widget.global.error', function(evt) {
+                console.log('error', evt);
+            }, false);
+
+        </script>
     </body>
 </html>
