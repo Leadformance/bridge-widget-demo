@@ -1,7 +1,5 @@
 # Chart Main meta data
 apiVersion: v1
-# name needs to match the parent folder name, so we use .Values.nameOverride
-# instead to have the same folder structure across multiple projects
 name: widget-demo
 version: 2.8.0
 description: "[BRIDGE] - Widget Demo"
