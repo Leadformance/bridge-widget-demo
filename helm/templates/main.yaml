@@ -1,0 +1,7 @@
+{{ template "bridge.config" . }}
+---
+{{ template "bridge.deployment.bo" . }}
+---
+{{ template "bridge.service.bo" . }}
+---
+{{ template "bridge.ingress" . }}

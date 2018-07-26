@@ -1,0 +1,13 @@
+# Chart Main meta data
+apiVersion: v1
+name: widget-demo
+version: 2.8.0
+description: "[BRIDGE] - Widget Demo"
+keywords:
+ - bridge
+ - ui
+home: "https://widget-demo.v3.leadformance.com"
+sources:
+ - "https://github.com/Leadformance/bridge-widget-demo"
+ - "https://github.com/Leadformance/bridge-widget"
+icon: "https://portal.v3.leadformance.com/assets/images/bridge-header.png"
