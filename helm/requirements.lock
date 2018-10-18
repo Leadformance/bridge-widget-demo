@@ -1,6 +1,0 @@
-dependencies:
-- name: bridge-v3-templates
-  repository: https://nexus.dev.v3.aws.lead.fm/repository/helm-all/charts
-  version: 1.1.0
-digest: sha256:4826e49be5edc51031f2b97587cdb39cd49407ccb651839b84bfe0ab931b6a89
-generated: 2018-07-24T15:04:04.463244563+02:00
