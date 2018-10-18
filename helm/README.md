@@ -5,7 +5,7 @@ BRIDGE Widget Demo.
 ## TL;DR;
 
 ```console
-$ helm repo add bridge-all https://nexus.dev.v3.aws.lead.fm/repository/helm-all/charts
+$ helm repo add helm-artifactory https://solocal.jfrog.io/solocal/helm
 $ helm install bridge/widget-demo
 ```
 
@@ -75,7 +75,7 @@ $ helm upgrade --install --wait my-release -f values.yaml bridge/widget-demo
 ## How to Test
 
 In order to test your template : 
-1. `helm repo add bridge-all https://nexus.dev.v3.aws.lead.fm/repository/helm-all/charts`
+1. `helm repo add helm-artifactory https://solocal.jfrog.io/solocal/helm`
 1. `helm dependency update helm`
 1. `helm template helm --notes -n <release-name> --namespace <namespace>`
       
