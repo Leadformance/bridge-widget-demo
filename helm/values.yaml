@@ -35,8 +35,8 @@ ingress:
   enabled: true
   annotations:
     kubernetes.io/ingress.class: "external"
-    ingress.kubernetes.io/upstream-max-fails: "2"
-    ingress.kubernetes.io/upstream-fail-timeout: "30"
+    nginx.ingress.kubernetes.io/upstream-max-fails: "2"
+    nginx.ingress.kubernetes.io/upstream-fail-timeout: "30"
   hosts:
     # List of basename and public flag where this service will be exposed
     - basename: widget-demo
