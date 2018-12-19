@@ -40,7 +40,6 @@ ingress:
   hosts:
     # List of basename and public flag where this service will be exposed
     - basename: widget-demo
-      public: false
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
