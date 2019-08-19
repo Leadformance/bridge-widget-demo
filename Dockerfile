@@ -1,4 +1,4 @@
-FROM nginx:1.9
+FROM nginx:1.17.3
 
 MAINTAINER dpellier@leadformance.com
 
