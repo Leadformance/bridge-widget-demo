@@ -1,6 +1,6 @@
-FROM nginx:1.17.5
-
-MAINTAINER dpellier@leadformance.com
+FROM alpine as builder
+FROM nginx:1.17-alpine as production
+LABEL maintainer="dev@leadformance.com"
 
 # Copy the nginx configs
 COPY docker-config/nginx/nginx.conf /etc/nginx/
