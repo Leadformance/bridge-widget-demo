@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Leadformance/bridge-widget-demo/compare/v1.0.0...v1.0.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* declare secrets in helm template file ([a26bd88](https://github.com/Leadformance/bridge-widget-demo/commit/a26bd882a32dbfe4731e71e7f0023375785a6b63))
+
 # 1.0.0 (2019-12-02)
 
 
