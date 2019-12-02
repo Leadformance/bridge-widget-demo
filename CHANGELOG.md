@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Leadformance/bridge-widget-demo/compare/v1.0.1...v1.0.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* startup init issue ([898d9d3](https://github.com/Leadformance/bridge-widget-demo/commit/898d9d349c2fba89bb229d280117fd73401a8820))
+
 ## [1.0.1](https://github.com/Leadformance/bridge-widget-demo/compare/v1.0.0...v1.0.1) (2019-12-02)
 
 
