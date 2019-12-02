@@ -1,5 +1,7 @@
 {{ template "bridge.config" . }}
 ---
+{{ template "bridge.secret" . }}
+---
 {{ template "bridge.deployment.bo" . }}
 ---
 {{ template "bridge.service.bo" . }}
