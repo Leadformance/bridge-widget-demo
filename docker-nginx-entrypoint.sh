@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
 app_bundle_dir=/usr/share/nginx/html;
