@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Leadformance/bridge-widget-demo/compare/v1.0.2...v1.1.0) (2019-12-04)
+
+
+### Features
+
+* use widget-url from config map instead of custom value ([d2b96fc](https://github.com/Leadformance/bridge-widget-demo/commit/d2b96fc671f3bc357a04c3a6c20285e3a96dd0e9))
+
 ## [1.0.2](https://github.com/Leadformance/bridge-widget-demo/compare/v1.0.1...v1.0.2) (2019-12-02)
 
 

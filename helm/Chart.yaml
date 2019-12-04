@@ -1,7 +1,7 @@
 # Chart Main meta data
 apiVersion: v1
 name: widget-demo
-version: 1.0.2
+version: 1.1.0
 description: "[BRIDGE] - Widget Demo"
 keywords:
  - bridge
