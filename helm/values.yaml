@@ -6,12 +6,12 @@ config:
   # <config-key>:
   #  env: <Environment variable for injection (optional)>
   #  value: Always : `~` the value must be declared in secret management operating system>
-  widget-url:
-    env: CONFIG_KUBERNETES_WIDGET_URL
-    value: ~
   map-provider:
     env: CONFIG_KUBERNETES_MAP_PROVIDER
     value: ~
+  widget-url:
+    env: CONFIG_KUBERNETES_WIDGET_URL
+    from: widget
   bridge-api-url:
     env: CONFIG_KUBERNETES_API_URL
     from: public-api
