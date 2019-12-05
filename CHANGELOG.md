@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.0...v1.1.1) (2019-12-05)
+
+
+### Bug Fixes
+
+* add missing ping route ([2ff1ea0](https://github.com/Leadformance/bridge-widget-demo/commit/2ff1ea0351a940d4749d15f9c07a9ece539a0792))
+
 # [1.1.0](https://github.com/Leadformance/bridge-widget-demo/compare/v1.0.2...v1.1.0) (2019-12-04)
 
 
