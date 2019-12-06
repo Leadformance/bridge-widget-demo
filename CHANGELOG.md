@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.1...v1.1.2) (2019-12-06)
+
+
+### Bug Fixes
+
+* use latest helm templates ([f4dca2e](https://github.com/Leadformance/bridge-widget-demo/commit/f4dca2e113e62f67602064e5764da9ad3ad36c81))
+
 ## [1.1.1](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.0...v1.1.1) (2019-12-05)
 
 
