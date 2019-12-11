@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.2...v1.1.3) (2019-12-11)
+
+
+### Bug Fixes
+
+* add demo asset to the repository ([4a5fe3d](https://github.com/Leadformance/bridge-widget-demo/commit/4a5fe3d66954aeaa4b137399bab07386581bc9b8))
+
 ## [1.1.2](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.1...v1.1.2) (2019-12-06)
 
 
