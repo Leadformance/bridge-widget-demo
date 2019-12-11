@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'widget';
-    src:  url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.eot?l23fxg');
-    src:  url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.eot?l23fxg#iefix') format('embedded-opentype'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.ttf?l23fxg') format('truetype'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.woff?l23fxg') format('woff'),
-    url('https://s3-eu-west-1.amazonaws.com/bridge-v3-widget/demo/widget.svg?l23fxg#icomoon') format('svg');
+    src:  url('bridgeUIIcon.eot?l23fxg');
+    src:  url('bridgeUIIcon.eot?l23fxg#iefix') format('embedded-opentype'),
+    url('bridgeUIIcon.ttf?l23fxg') format('truetype'),
+    url('bridgeUIIcon.woff?l23fxg') format('woff'),
+    url('bridgeUIIcon.svg?l23fxg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -71,11 +71,11 @@ body {
 }
 
 .search-geolocation-button::before {
-    content: '\e903';
+    content: '\f192';
 }
 
 .search-form-submit::before {
-    content: '\e900';
+    content: '\e91a';
 }
 
 .search-form-input {
@@ -126,9 +126,9 @@ body {
     width: 38px;
     position: absolute;
     left: -19px;
-    top: -40px;
+    top: -24px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 11px;
     height: 50px;
     text-align: center;
 }
@@ -202,7 +202,7 @@ body {
 }
 
 .location-address:before {
-    content: '\e905';
+    content: '\e945';
 }
 
 .location-phone-link,
@@ -215,11 +215,11 @@ body {
 }
 
 .location-phone-link:before {
-    content: '\e904';
+    content: '\e91b';
 }
 
 .location-email-link:before {
-    content: '\e902';
+    content: '\e904';
 }
 
 .location-phone-link:hover,
@@ -299,7 +299,7 @@ body {
 
 .location-times:before {
     font-family: 'widget';
-    content: '\e901';
+    content: '\e912';
     top: 4px;
     left: 8px;
     font-size: 24px;
@@ -307,18 +307,17 @@ body {
 }
 
 .location-times:after {
-    content: '\e906';
+    content: '\e90b';
     position: absolute;
     font-family: 'widget';
     right: 8px;
     top: 4px;
-    transform: rotate(90deg);
     font-size: 24px;
     transition: transform .32s;
 }
 
 .location-times:hover:after {
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
 }
 
 .location-offer-ranges {
@@ -328,7 +327,7 @@ body {
 
 .location-offer-ranges:before {
     font-family: 'widget';
-    content: '\e907';
+    content: '\e927';
     top: 4px;
     left: 8px;
     font-size: 24px;
@@ -436,8 +435,8 @@ body {
 
 .route:before {
     font-family: 'widget';
-    content: '\e909';
-    line-height: 22px;
+    content: '\e52e';
+    font-size: 28px;
 }
 
 .route:hover {
