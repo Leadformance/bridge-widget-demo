@@ -1,5 +1,7 @@
 # Chart Main meta data
-apiVersion: v1
+apiVersion: v2
+# name needs to match the parent folder name, so we use .Values.nameOverride
+# instead to have the same folder structure across multiple projects
 name: widget-demo
 version: 1.1.3
 description: "[BRIDGE] - Widget Demo"
@@ -11,3 +13,10 @@ sources:
  - "https://github.com/Leadformance/bridge-widget-demo"
  - "https://github.com/Leadformance/bridge-widget"
 icon: "https://portal.v3.leadformance.com/assets/images/bridge-header.png"
+dependencies:
+  - name: bridge-v3-templates
+    version: ^6.0.0
+    repository: "@bridge"
+    import-values:
+      - devops
+
