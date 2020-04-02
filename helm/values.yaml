@@ -4,8 +4,11 @@
 # Service specific configuration
 config:
   # <config-key>:
-  #  env: <Environment variable for injection (optional)>
-  #  value: Always : `~` the value must be declared in secret management operating system>
+  #  env: <Environment variable for injection>
+  #  value: ~ # null
+  #       `~` means the value must be declared in configuration management system
+  #       Best Practice : Set a value here only when the parameter is different between developers env and k8s ones
+  #  public: true <optional>, indicates when the value is published on config map
   map-provider:
     env: CONFIG_KUBERNETES_MAP_PROVIDER
     value: ~
