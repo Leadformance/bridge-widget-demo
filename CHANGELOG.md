@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.3...v1.2.0) (2020-04-02)
+
+
+### Features
+
+* use the latest helm chart ([2099014](https://github.com/Leadformance/bridge-widget-demo/commit/2099014cfcef819f584f08934581609096d08b4e))
+
 ## [1.1.3](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.2...v1.1.3) (2019-12-11)
 
 
