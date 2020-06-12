@@ -1,7 +1,0 @@
-# List of dependencies for this chart
-dependencies:
-  - name: bridge-v3-templates
-    version: ^5.5.0
-    repository: "@bridge"
-    import-values:
-      - devops
