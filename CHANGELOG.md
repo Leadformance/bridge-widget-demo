@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.0...v1.2.1) (2020-06-12)
+
+
+### Bug Fixes
+
+* remove uneeded requirements.yaml ([a119b9d](https://github.com/Leadformance/bridge-widget-demo/commit/a119b9da6a5359ff4e81740b1a645e673734b883))
+
 # [1.2.0](https://github.com/Leadformance/bridge-widget-demo/compare/v1.1.3...v1.2.0) (2020-04-02)
 
 
