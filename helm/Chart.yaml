@@ -15,7 +15,7 @@ sources:
 icon: "https://portal.v3.leadformance.com/assets/images/bridge-header.png"
 dependencies:
   - name: bridge-v3-templates
-    version: ^6.0.0
+    version: ^7.3.0
     repository: "@bridge"
     import-values:
       - devops
