@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.1...v1.2.2) (2020-11-18)
+
+
+### Automatic Dependencies Upgrade
+
+* upgrade bridge-v3-template to fix timeout at stack create ([6ae839d](https://github.com/Leadformance/bridge-widget-demo/commit/6ae839d8fc3f070afaf57193bb518a385c0426f4)), closes [Leadformance/bridge-helm-charts#340](https://github.com/Leadformance/bridge-helm-charts/issues/340)
+
 ## [1.2.1](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.0...v1.2.1) (2020-06-12)
 
 
