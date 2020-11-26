@@ -1,5 +1,5 @@
 FROM alpine as builder
-FROM nginx:1.17-alpine as production
+FROM nginx:1.19.5-alpine as production
 LABEL maintainer="dev@leadformance.com"
 
 # Copy the nginx configs
