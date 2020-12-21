@@ -3,7 +3,7 @@ apiVersion: v2
 # name needs to match the parent folder name, so we use .Values.nameOverride
 # instead to have the same folder structure across multiple projects
 name: widget-demo
-version: 1.2.2
+version: 1.2.3
 description: "[BRIDGE] - Widget Demo"
 keywords:
  - bridge

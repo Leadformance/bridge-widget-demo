@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.2...v1.2.3) (2020-12-21)
+
+
+### Automatic Dependencies Upgrade
+
+* bump chart library ([8a852e3](https://github.com/Leadformance/bridge-widget-demo/commit/8a852e3f02b353f8a9f7df512e7c2056e3e8730e))
+
 ## [1.2.2](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.1...v1.2.2) (2020-11-18)
 
 
