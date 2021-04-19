@@ -1,15 +1,17 @@
 FROM alpine as builder
-FROM nginx:1.19.7-alpine as production
+FROM nginx:1.19-alpine as production
 LABEL maintainer="dev@leadformance.com"
 
+# Create folder layout
+RUN mkdir /www \
+    && chown nginx /www \
+    && mkdir -p /tmp/client-body /tmp/proxy_temp_path /tmp/fastcgi_temp /tmp/uwsgi_temp /tmp/scgi_temp
+
 # Copy the nginx configs
-COPY docker-config/nginx/nginx.conf /etc/nginx/
-COPY docker-config/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
+COPY docker-config/nginx.conf /etc/nginx/nginx.conf
+COPY docker-config/env-vars-overrides.sh /docker-entrypoint.d/40-env-vars-overrides.sh
 
 # Create app directory
-COPY src/ /usr/share/nginx/html
+COPY src/ /www
 
-COPY docker-nginx-entrypoint.sh /usr/local/bin/docker-nginx-entrypoint
-RUN chmod +x /usr/local/bin/docker-nginx-entrypoint
-
-ENTRYPOINT ["/usr/local/bin/docker-nginx-entrypoint"]
+USER nginx
