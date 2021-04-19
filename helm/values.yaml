@@ -34,7 +34,7 @@ image:
   repository: solocal/bridge-widget-demo
 
 service:
-  port: 80
+  port: 8080
 
 ingress:
   enabled: true

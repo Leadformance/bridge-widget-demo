@@ -1,0 +1,17 @@
+.dependabot/
+.github/
+.github-assets/
+.idea/
+dist/
+doc/
+helm/
+node_modules/
+logs/
+
+.dockerignore
+.editorconfig
+.gitignore
+
+.nvmrc
+Dockerfile*
+CODEOWNERS
