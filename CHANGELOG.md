@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.3...v2.0.0) (2021-04-19)
+
+
+### Automatic Dependencies Upgrade
+
+* bump nginx from 1.17-alpine to 1.19.7-alpine ([aa767d1](https://github.com/Leadformance/bridge-widget-demo/commit/aa767d16e3c1bbb22a380e89ba186d312e35e6b9))
+
+
+### chore
+
+* rebuild docker layer and configuration ([38292ad](https://github.com/Leadformance/bridge-widget-demo/commit/38292ad28da4ad8fdfcda915acd4289864907a29))
+
+
+### BREAKING CHANGES
+
+* Move from 80 to 8080 port
+
 ## [1.2.3](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.2...v1.2.3) (2020-12-21)
 
 
