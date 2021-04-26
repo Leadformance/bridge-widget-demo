@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Leadformance/bridge-widget-demo/compare/v2.0.0...v2.0.1) (2021-04-26)
+
+
+### Bug Fixes
+
+* bad testing url ([fcab68c](https://github.com/Leadformance/bridge-widget-demo/commit/fcab68cd4199b8e5737120aeabe4811cfa673881))
+
 # [2.0.0](https://github.com/Leadformance/bridge-widget-demo/compare/v1.2.3...v2.0.0) (2021-04-19)
 
 
