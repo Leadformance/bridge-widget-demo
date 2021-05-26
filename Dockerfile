@@ -1,5 +1,5 @@
 FROM alpine as builder
-FROM nginx:1.19-alpine as production
+FROM nginx:1.21.0-alpine as production
 LABEL maintainer="dev@leadformance.com"
 
 # Create folder layout
